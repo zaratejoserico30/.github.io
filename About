@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Civil Engineering Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2 {
+            color: #005792;
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .mission {
+            background: #e8f4fd;
+            padding: 20px;
+            border-left: 5px solid #005792;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #005792;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>About Civil Engineering Hub</h1>
+
+        <p>
+            Civil Engineering Hub is a comprehensive platform designed to support engineers,
+            project managers, contractors, students, and construction professionals with
+            practical tools, technical resources, and project management solutions.
+        </p>
+
+        <p>
+            Our goal is to simplify engineering workflows by providing reliable calculations,
+            quantity estimation tools, project tracking systems, and educational resources
+            that improve productivity and decision-making throughout the construction lifecycle.
+        </p>
+
+        <h2>What We Offer</h2>
+        <ul>
+            <li>Engineering Calculators and Design Tools</li>
+            <li>Quantity Takeoff and Cost Estimation Resources</li>
+            <li>Construction Project Tracking Systems</li>
+            <li>Material and Equipment Planning Tools</li>
+            <li>Progress Monitoring and Reporting Templates</li>
+            <li>Quality Control and Site Inspection Resources</li>
+            <li>Project Documentation and Record Management</li>
+            <li>Learning Materials for Civil Engineering Students and Professionals</li>
+        </ul>
+
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                To empower the engineering and construction community by delivering
+                accessible, practical, and innovative digital solutions that enhance
+                project efficiency, accuracy, and professional growth.
+            </p>
+        </div>
+
+        <h2>Who We Serve</h2>
+        <p>
+            We serve civil engineers, site engineers, project engineers, quantity surveyors,
+            estimators, construction managers, consultants, contractors, government agencies,
+            and engineering students seeking reliable tools and resources for successful
+            project execution.
+        </p>
+
+        <h2>Why Choose Us</h2>
+        <p>
+            Our platform is built with a focus on real-world construction challenges.
+            Every tool and resource is designed to provide practical value, helping users
+            save time, reduce errors, and improve project outcomes.
+        </p>
+
+        <p>
+            Whether you are managing a large infrastructure project, estimating material
+            quantities, tracking site progress, or enhancing your engineering knowledge,
+            Civil Engineering Hub is your trusted partner in construction excellence.
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Civil Engineering Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
