@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Engineering Hub</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            color:#333;
+        }
+
+        header{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        nav{
+            background:#004080;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .hero{
+            text-align:center;
+            padding:60px 20px;
+            background:white;
+        }
+
+        .hero h1{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:18px;
+            color:#666;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:40px auto;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card h3{
+            color:#003366;
+            margin-bottom:10px;
+        }
+
+        .card p{
+            color:#666;
+        }
+
+        footer{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:15px;
+            padding:10px 20px;
+            background:#0073e6;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .btn:hover{
+            background:#005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Civil Engineering Hub</h1>
+    <p>Engineering Tools, Calculations, Project Tracking & Resources</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Calculators</a>
+    <a href="#">Project Tracking</a>
+    <a href="#">Quantity Estimates</a>
+    <a href="#">Resources</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to Civil Engineering Hub</h1>
+    <p>Your all-in-one platform for civil engineering calculations, project management, quantity estimation, and technical resources.</p>
+</section>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Engineering Calculators</h3>
+            <p>Concrete volume, steel weight, footing design, beam calculations, and more.</p>
+            <a href="#" class="btn">Open Tools</a>
+        </div>
+
+        <div class="card">
+            <h3>Project Tracking System</h3>
+            <p>Monitor project progress, daily accomplishments, delays, and milestones.</p>
+            <a href="#" class="btn">View Projects</a>
+        </div>
+
+        <div class="card">
+            <h3>Quantity Estimation</h3>
+            <p>Estimate concrete, rebar, excavation, masonry, and finishing quantities.</p>
+            <a href="#" class="btn">Estimate Now</a>
+        </div>
+
+        <div class="card">
+            <h3>Engineering Resources</h3>
+            <p>Download templates, forms, checklists, BOQ samples, and reference materials.</p>
+            <a href="#" class="btn">Browse Resources</a>
+        </div>
+
+        <div class="card">
+            <h3>Daily Site Reports</h3>
+            <p>Create and manage daily construction reports and site documentation.</p>
+            <a href="#" class="btn">Open Reports</a>
+        </div>
+
+        <div class="card">
+            <h3>Material Management</h3>
+            <p>Track material deliveries, inventory levels, and usage records.</p>
+            <a href="#" class="btn">Manage Materials</a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Civil Engineering Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
