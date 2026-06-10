@@ -1,182 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Civil Engineering Hub</title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARDZ Construction - Systems</title>
 
-        body{
-            background:#f4f6f9;
-            color:#333;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        header{
-            background:#003366;
-            color:white;
-            text-align:center;
-            padding:30px;
-        }
+body{
+    background:#f5f7fa;
+    min-height:100vh;
+}
 
-        nav{
-            background:#004080;
-            padding:15px;
-            text-align:center;
-        }
+.header{
+    background:#0f4c81;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
-        }
+.header h1{
+    margin-bottom:5px;
+}
 
-        .hero{
-            text-align:center;
-            padding:60px 20px;
-            background:white;
-        }
+.container{
+    max-width:900px;
+    margin:30px auto;
+    padding:20px;
+}
 
-        .hero h1{
-            font-size:40px;
-            margin-bottom:15px;
-        }
+.card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom:25px;
+}
 
-        .hero p{
-            font-size:18px;
-            color:#666;
-        }
+.card h2{
+    color:#0f4c81;
+    margin-bottom:15px;
+}
 
-        .container{
-            width:90%;
-            max-width:1200px;
-            margin:40px auto;
-        }
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin:10px 0;
+}
 
-        .cards{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-        }
+button{
+    background:#0f4c81;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
 
-        .card{
-            background:white;
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.1);
-            transition:0.3s;
-        }
+button:hover{
+    background:#08355b;
+}
 
-        .card:hover{
-            transform:translateY(-5px);
-        }
+.systems{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
 
-        .card h3{
-            color:#003366;
-            margin-bottom:10px;
-        }
+.system-card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    transition:.3s;
+}
 
-        .card p{
-            color:#666;
-        }
+.system-card:hover{
+    transform:translateY(-5px);
+}
 
-        footer{
-            background:#003366;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:40px;
-        }
+.system-card h3{
+    color:#0f4c81;
+    margin-bottom:10px;
+}
 
-        .btn{
-            display:inline-block;
-            margin-top:15px;
-            padding:10px 20px;
-            background:#0073e6;
-            color:white;
-            text-decoration:none;
-            border-radius:5px;
-        }
+.system-card p{
+    margin-bottom:15px;
+    color:#555;
+}
 
-        .btn:hover{
-            background:#005bb5;
-        }
-    </style>
+.footer{
+    text-align:center;
+    padding:20px;
+    color:#666;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Civil Engineering Hub</h1>
-    <p>Engineering Tools, Calculations, Project Tracking & Resources</p>
-</header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Calculators</a>
-    <a href="#">Project Tracking</a>
-    <a href="#">Quantity Estimates</a>
-    <a href="#">Resources</a>
-    <a href="#">Contact</a>
-</nav>
-
-<section class="hero">
-    <h1>Welcome to Civil Engineering Hub</h1>
-    <p>Your all-in-one platform for civil engineering calculations, project management, quantity estimation, and technical resources.</p>
-</section>
+<div class="header">
+    <h1>ARDZ Construction</h1>
+    <p>Management Portal</p>
+</div>
 
 <div class="container">
 
-    <div class="cards">
+    <div class="card">
+        <h2>Firebase API Key</h2>
 
-        <div class="card">
-            <h3>Engineering Calculators</h3>
-            <p>Concrete volume, steel weight, footing design, beam calculations, and more.</p>
-            <a href="#" class="btn">Open Tools</a>
+        <p>
+            Enter your Firebase API key to access the systems.
+            The key is stored only for this session and cleared
+            when you close the browser.
+        </p>
+
+        <input type="password" id="apikey" placeholder="Enter API Key">
+
+        <button onclick="saveKey()">Enter</button>
+
+        <p style="margin-top:15px;color:green;" id="status"></p>
+
+        <small>
+            Your API key is never stored permanently or sent anywhere
+            other than Firebase.
+        </small>
+    </div>
+
+    <h2 style="margin-bottom:20px;">Select a System</h2>
+
+    <div class="systems">
+
+        <div class="system-card">
+            <h3>🚜 EquipTrack</h3>
+            <p>
+                Equipment logging, borrowing and status tracking.
+            </p>
+            <button onclick="openSystem('equiptrack.html')">
+                Open System
+            </button>
         </div>
 
-        <div class="card">
-            <h3>Project Tracking System</h3>
-            <p>Monitor project progress, daily accomplishments, delays, and milestones.</p>
-            <a href="#" class="btn">View Projects</a>
+        <div class="system-card">
+            <h3>📦 MatTrack</h3>
+            <p>
+                Material deliveries, inventory and pull-out tracking.
+            </p>
+            <button onclick="openSystem('mattrack.html')">
+                Open System
+            </button>
         </div>
 
-        <div class="card">
-            <h3>Quantity Estimation</h3>
-            <p>Estimate concrete, rebar, excavation, masonry, and finishing quantities.</p>
-            <a href="#" class="btn">Estimate Now</a>
+        <div class="system-card">
+            <h3>🏗️ SiteTrack</h3>
+            <p>
+                Daily site activity logging and reporting.
+            </p>
+            <button onclick="openSystem('sitetrack.html')">
+                Open System
+            </button>
         </div>
 
-        <div class="card">
-            <h3>Engineering Resources</h3>
-            <p>Download templates, forms, checklists, BOQ samples, and reference materials.</p>
-            <a href="#" class="btn">Browse Resources</a>
-        </div>
-
-        <div class="card">
-            <h3>Daily Site Reports</h3>
-            <p>Create and manage daily construction reports and site documentation.</p>
-            <a href="#" class="btn">Open Reports</a>
-        </div>
-
-        <div class="card">
-            <h3>Material Management</h3>
-            <p>Track material deliveries, inventory levels, and usage records.</p>
-            <a href="#" class="btn">Manage Materials</a>
+        <div class="system-card">
+            <h3>📐 SiteTools</h3>
+            <p>
+                Engineering calculators and computation tools.
+            </p>
+            <button onclick="openSystem('sitetools.html')">
+                Open System
+            </button>
         </div>
 
     </div>
 
 </div>
 
-<footer>
-    <p>&copy; 2026 Civil Engineering Hub. All Rights Reserved.</p>
-</footer>
+<div class="footer">
+    ARDZ Construction · All Systems v1.0
+</div>
+
+<script>
+function saveKey(){
+    const key = document.getElementById("apikey").value;
+
+    if(key.trim() === ""){
+        alert("Please enter API Key");
+        return;
+    }
+
+    sessionStorage.setItem("firebaseApiKey", key);
+
+    document.getElementById("status").innerHTML =
+        "✓ API Key active for this session";
+}
+
+function openSystem(page){
+    window.location.href = page;
+}
+</script>
 
 </body>
 </html>
